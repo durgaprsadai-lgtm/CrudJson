@@ -13,7 +13,7 @@ namespace InMemoryCrudApp.Services
         {
             if (File.Exists(_filePath))
             {
-                var json = File.ReadAllText(_filePath);
+                var json =  File.ReadAllText(_filePath);
                 _employees = JsonSerializer.Deserialize<List<Employee>>(json) ?? new List<Employee>();
                 _nextId = _employees.Any() ? _employees.Max(e => e.Id) + 1 : 1;
             }
@@ -45,7 +45,7 @@ namespace InMemoryCrudApp.Services
         public void Update(Employee employee, string newPlainPassword = null)
         {
             var existing = GetById(employee.Id);
-            if (existing != null)
+            if (existing != null) 
             {
                 existing.Name = employee.Name;
                 existing.Department = employee.Department;
