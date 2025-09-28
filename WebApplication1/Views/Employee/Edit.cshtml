@@ -1,0 +1,12 @@
+﻿@using InMemoryCrudApp.Models
+@model Employee
+<h2>Edit Employee</h2>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <input asp-for="Name" class="form-control" /><br />
+    <input asp-for="Department" class="form-control" /><br />
+    <input asp-for="Email" class="form-control" /><br />
+    <label>Password</label>
+    <input type="password" name="plainPassword" class="form-control" />
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

@@ -1,0 +1,24 @@
+﻿@using InMemoryCrudApp.Models
+@model List<Employee>
+<h2>Employee List</h2>
+<a asp-action="Create" class="btn btn-primary">Add New</a>
+<table class="table mt-3">
+    <thead>
+        <tr><th>Name</th><th>Department</th><th>Email</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Department</td>
+                <td>@emp.Email</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@emp.Id">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@emp.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@emp.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

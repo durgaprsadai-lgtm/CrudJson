@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "Name": "Durgaprasad",
+    "Department": "IT",
+    "Email": "durgaprasad@gmail.com",
+    "PasswordHash": null
+  },
+  {
+    "Id": 2,
+    "Name": "Sukanya",
+    "Department": "HR",
+    "Email": "sukanya@gmail.com",
+    "PasswordHash": null
+  },
+  {
+    "Id": 3,
+    "Name": "Prasad",
+    "Department": "HR",
+    "Email": "Prasad@gmail.com",
+    "PasswordHash": "a5vQMHAym8nCwFGESBVoarWPMktMSoW88lXeGWKmUNA="
+  }
+]
